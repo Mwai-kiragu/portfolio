@@ -1,0 +1,143 @@
+body .container-fluid {
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-sizing: inherit;
+}
+
+footer {
+    flex-direction: column;
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+    display: flex;
+    margin-top: auto;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    font-size: 1.4rem;
+    box-sizing: inherit;
+}
+
+.services {
+    box-sizing: border-box;
+    display: block;
+    margin-top: 36px;
+    font-size: 18px;
+    font-family: sans-serif;
+    display: grid;
+}
+
+header>a {
+    text-transform: uppercase;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+}
+
+a {
+    color: rgba(255, 255, 255, .87);
+    text-decoration: none;
+    box-sizing: inherit;
+    padding-right: 25px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.mwai {
+    width: 70px;
+    height: 70px;
+    color: black;
+}
+
+.navbar {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.bg-image {
+    background-image: url(https://www.codingdojo.com/blog/wp-content/uploads/Screen-Shot-2020-01-08-at-3.44.24-PM.png);
+}
+
+#testbutton {
+    width: 150px;
+    height: 50px;
+    border-radius: 180px;
+    position: relative;
+    left: calc(50% - 75px);
+    top: calc(50% - 25px);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    cursor: pointer;
+    line-height: 12px;
+    color: rgba(235, 235, 235, 1);
+}
+
+#testbutton:before {
+    content: 'Contact Me';
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 70%;
+    top: 15%;
+    left: 10%;
+    transition: 0.3s opacity ease-in-out;
+    filter: blur(15px);
+    opacity: 0;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+#testbutton:hover:before {
+    opacity: 1;
+    transition: 0.3s opacity ease-in-out;
+    filter: blur(25px);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+#testbutton:after {
+    content: 'Contact Me';
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: rgba(235, 235, 235, 1);
+    font-weight: bold;
+    z-index: 5;
+    position: absolute;
+    display: block;
+    border-radius: 180px;
+    width: 92%;
+    height: 80%;
+    top: 10%;
+    left: 4%;
+    background-color: rgb(19, 20, 22);
+}
+
+.img-fluid {
+    object-fit: cover;
+}
+
+.hero {
+    padding: 15px;
+}
+
+p {
+    font-size: 20px;
+}
